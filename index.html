@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iftar Invitation at Mr. & Mrs. Faruq's Residence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;500&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Elegant Islamic Minimalism - Color Palette */
+        /* Primary: Deep Teal (#1a5f7a) - tradition and depth */
+        /* Accent: Warm Gold (#d4af37) - celebration and light */
+        /* Background: Off-white (#f9f7f3) - contemplative space */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f9f7f3;
+            color: #2c2c2c;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .font-mono {
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663160502392/56tbFQcTzHprXUQSJAuLpm/iftar-hero-bg-WGNpgjNH5YyfwSNNP8ZBGe.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 42rem;
+        }
+
+        .space-y-8 > * + * {
+            margin-top: 2rem;
+        }
+
+        .space-y-6 > * + * {
+            margin-top: 1.5rem;
+        }
+
+        .space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+
+        .space-y-3 > * + * {
+            margin-top: 0.75rem;
+        }
+
+        .space-y-2 > * + * {
+            margin-top: 0.5rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-6 {
+            gap: 1.5rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .pt-4 {
+            padding-top: 1rem;
+        }
+
+        .pb-6 {
+            padding-bottom: 1.5rem;
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .py-3 {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .p-8 {
+            padding: 2rem;
+        }
+
+        .p-12 {
+            padding: 3rem;
+        }
+
+        .w-20 {
+            width: 5rem;
+        }
+
+        .h-20 {
+            height: 5rem;
+        }
+
+        .w-16 {
+            width: 4rem;
+        }
+
+        .h-16 {
+            height: 4rem;
+        }
+
+        .w-24 {
+            width: 6rem;
+        }
+
+        .h-24 {
+            height: 6rem;
+        }
+
+        .w-32 {
+            width: 8rem;
+        }
+
+        .h-px {
+            height: 1px;
+        }
+
+        .opacity-30 {
+            opacity: 0.3;
+        }
+
+        .opacity-40 {
+            opacity: 0.4;
+        }
+
+        .opacity-95 {
+            opacity: 0.95;
+        }
+
+        .opacity-98 {
+            opacity: 0.98;
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        .rounded-md {
+            border-radius: 0.375rem;
+        }
+
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .shadow-2xl {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .bg-white {
+            background-color: white;
+        }
+
+        .bg-gradient {
+            background: linear-gradient(to bottom right, #f9f7f3, #f0ebe3);
+        }
+
+        .border-b-2 {
+            border-bottom: 2px solid #d4af37;
+        }
+
+        .border-t-2 {
+            border-top: 2px solid #d4af37;
+        }
+
+        .border-2-gold {
+            border: 2px solid #d4af37;
+        }
+
+        .text-5xl {
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 1;
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 1;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .font-light {
+            font-weight: 300;
+        }
+
+        .text-teal {
+            color: #1a5f7a;
+        }
+
+        .text-gold {
+            color: #d4af37;
+        }
+
+        .text-dark {
+            color: #2c2c2c;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .tracking-widest {
+            letter-spacing: 0.1em;
+        }
+
+        .tracking-wider {
+            letter-spacing: 0.05em;
+        }
+
+        .leading-tight {
+            line-height: 1.25;
+        }
+
+        .leading-relaxed {
+            line-height: 1.625;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .grid-cols-4 {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.125rem;
+            border: 2px solid #d4af37;
+            border-radius: 0.375rem;
+            font-family: 'Lora', serif;
+            color: #2c2c2c;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #1a5f7a;
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Lora', serif;
+        }
+
+        .btn-primary {
+            background-color: #1a5f7a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0f3d52;
+        }
+
+        .btn-primary:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a5f7a;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0f3d52;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .p-12 {
+                padding: 2rem;
+            }
+
+            .text-5xl {
+                font-size: 2rem;
+            }
+
+            .text-4xl {
+                font-size: 1.75rem;
+            }
+
+            .text-2xl {
+                font-size: 1.25rem;
+            }
+
+            .grid-cols-4 {
+                gap: 1rem;
+            }
+
+            .grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .p-8 {
+                padding: 1.5rem;
+            }
+
+            .text-5xl {
+                font-size: 1.75rem;
+            }
+
+            .text-4xl {
+                font-size: 1.5rem;
+            }
+
+            .text-lg {
+                font-size: 1rem;
+            }
+
+            .grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Name Entry Section -->
+            <div id="nameSection" class="space-y-8 visible">
+                <div class="text-center space-y-4">
+                    <div class="flex-center mb-6">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663160502392/56tbFQcTzHprXUQSJAuLpm/iftar-crescent-moon-UDMEnt4kqWzU5gdkNSQfYa.webp" alt="Crescent Moon" class="w-20 h-20 animate-pulse">
+                    </div>
+                    <h1 class="text-5xl font-bold text-teal leading-tight">You are Invited</h1>
+                    <p class="text-lg text-dark font-light">to a blessed evening of Iftar</p>
+                </div>
+
+                <form id="nameForm" class="space-y-6" onsubmit="handleSubmit(event)">
+                    <div class="bg-white bg-opacity-95 rounded-lg p-8 shadow-lg space-y-4">
+                        <label for="nameInput" class="block text-sm font-semibold text-teal">Please enter your name to proceed</label>
+                        <input type="text" id="nameInput" placeholder="Your Name" required>
+                        <button type="submit" class="btn-primary">Proceed to Invitation</button>
+                    </div>
+                </form>
+
+                <!-- Decorative Pattern -->
+                <div class="flex-center opacity-30">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663160502392/56tbFQcTzHprXUQSJAuLpm/iftar-pattern-accent-FnK3tyQe4maqxkzxRP2AEo.webp" alt="Islamic Pattern" class="w-24 h-24">
+                </div>
+            </div>
+
+            <!-- Invitation and Countdown Section -->
+            <div id="invitationSection" class="space-y-8 hidden animate-fadeIn">
+                <!-- Invitation Card -->
+                <div class="bg-white bg-opacity-98 rounded-lg p-8 shadow-2xl space-y-8">
+                    <!-- Header with Crescent -->
+                    <div class="flex-center mb-4">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663160502392/56tbFQcTzHprXUQSJAuLpm/iftar-crescent-moon-UDMEnt4kqWzU5gdkNSQfYa.webp" alt="Crescent Moon" class="w-16 h-16">
+                    </div>
+
+                    <!-- Personalized Greeting -->
+                    <div class="text-center space-y-3 border-b-2 pb-6">
+                        <p class="text-gold font-semibold text-sm tracking-widest uppercase">Assalamu Alaikum</p>
+                        <h2 class="text-4xl text-teal" id="guestName"></h2>
+                        <p class="text-lg text-dark font-light">You are warmly invited to join us for Iftar</p>
+                    </div>
+
+                    <!-- Event Details -->
+                    <div class="space-y-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <p class="text-sm text-teal font-semibold uppercase tracking-wider">Event</p>
+                                <p class="text-2xl text-dark">Iftar Dinner</p>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-sm text-teal font-semibold uppercase tracking-wider">Date</p>
+                                <p class="text-2xl text-dark">Saturday, March 7, 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <p class="text-sm text-teal font-semibold uppercase tracking-wider">Time</p>
+                                <p class="text-2xl text-dark">6:00 PM</p>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-sm text-teal font-semibold uppercase tracking-wider">Location</p>
+                                <p class="text-2xl text-dark">Mr & Mrs. Faruq's Residence No. 8 Justice Aisha's Street Beside Government House Lafia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Divider -->
+                    <div class="flex-center opacity-40 py-4">
+                        <div class="w-32 h-px" style="background-color: #d4af37;"></div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="text-center space-y-3">
+                        <p class="text-dark font-light text-lg leading-relaxed">We look forward to sharing this blessed moment with you as we break our fast together in company of friends and gratitude.</p>
+                        <p class="text-gold font-semibold text-sm">Wa Alaikum Assalam</p>
+                    </div>
+
+                    <!-- Navigation Link -->
+                    <div class="text-center pt-4 border-t-2">
+                        <a href="https://maps.app.goo.gl/Nggg1p53ruabEgUA9" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
+                    </div>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="bg-white bg-opacity-98 rounded-lg p-8 shadow-2xl">
+                    <h3 class="text-center text-teal font-semibold text-sm uppercase tracking-widest mb-6">Time Until Iftar</h3>
+
+                    <div class="grid grid-cols-4 gap-4">
+                        <!-- Days -->
+                        <div class="text-center space-y-3 p-4 bg-gradient rounded-lg">
+                            <div class="font-mono text-4xl font-bold text-teal tracking-tight" id="days">00</div>
+                            <p class="text-xs text-dark uppercase font-semibold tracking-wider">Days</p>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="text-center space-y-3 p-4 bg-gradient rounded-lg">
+                            <div class="font-mono text-4xl font-bold text-teal tracking-tight" id="hours">00</div>
+                            <p class="text-xs text-dark uppercase font-semibold tracking-wider">Hours</p>
+                        </div>
+
+                        <!-- Minutes -->
+                        <div class="text-center space-y-3 p-4 bg-gradient rounded-lg">
+                            <div class="font-mono text-4xl font-bold text-teal tracking-tight" id="minutes">00</div>
+                            <p class="text-xs text-dark uppercase font-semibold tracking-wider">Minutes</p>
+                        </div>
+
+                        <!-- Seconds -->
+                        <div class="text-center space-y-3 p-4 bg-gradient rounded-lg">
+                            <div class="font-mono text-4xl font-bold text-teal tracking-tight" id="seconds">00</div>
+                            <p class="text-xs text-dark uppercase font-semibold tracking-wider">Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const eventDate = new Date('2026-03-07T18:00:00').getTime();
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const nameInput = document.getElementById('nameInput');
+            const name = nameInput.value.trim();
+
+            if (name) {
+                document.getElementById('guestName').textContent = name;
+                document.getElementById('nameSection').classList.add('hidden');
+                document.getElementById('nameSection').classList.remove('visible');
+                document.getElementById('invitationSection').classList.remove('hidden');
+                document.getElementById('invitationSection').classList.add('visible');
+                updateCountdown();
+            }
+        }
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = eventDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((difference / 1000 / 60) % 60);
+                const seconds = Math.floor((difference / 1000) % 60);
+
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
